@@ -120,7 +120,7 @@ const app = new Hono()
     ),
     async (c) => {
       const auth = c.get("authUser");
-      console.log(auth);
+  
       const { page, limit } = c.req.valid("query");
 
       if (!auth.token?.id) {

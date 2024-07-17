@@ -83,14 +83,14 @@ export default {
       if (token.id) {
         session.user.id = token.id;
       }
-      console.log(session)
+    
       return session;
     },
     jwt({ token, user }) {
       if (user) {
         token.id = user.id;  
       }
-      console.log(token)
+      
       return token;
      
     }
